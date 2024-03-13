@@ -70,8 +70,8 @@ if __name__ == "__main__":
         sunset_utc = s["sunset"].astimezone(pytz.utc)
 
         # Adjust the time range for downloading images (start 20 minutes before sunrise and end 20 minutes after sunset)
-        start_time = sunrise_utc - datetime.timedelta(minutes=20) + datetime.timedelta(hours=1)
-        end_time = sunset_utc + datetime.timedelta(minutes=20, hours=1)
+        start_time = sunrise_utc - datetime.timedelta(hours=1) + datetime.timedelta(hours=1)
+        end_time = sunset_utc + datetime.timedelta(hours=2)
 
         # Check if the current time is within the time range for downloading images
         if start_time < current_time < end_time:

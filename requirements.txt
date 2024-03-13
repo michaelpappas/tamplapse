@@ -1,3 +1,4 @@
 requests==2.26.0
 pytz==2021.3
 astral==2.2
+opencv-python~=4.5.3
